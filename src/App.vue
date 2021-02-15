@@ -2,10 +2,13 @@
 <div class="container">
   <div id="app">
       <header>
-        <div>
-          shopping/user acount
+        <div class="cart-price">
+          shopping
         </div>
-        <div>
+        <div class="uses">
+          user acount
+        </div>
+        <div class="socailmedia">
           socail media icons
         </div>
         <img src="" alt="">

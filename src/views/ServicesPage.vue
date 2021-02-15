@@ -1,7 +1,7 @@
 <template>
 <div class="row" >
 <div>
-<li><services :items="service||preMade"/></li>
+<li><services :item="service||preMade"/></li>
 </div>
 </div>
 </template>
