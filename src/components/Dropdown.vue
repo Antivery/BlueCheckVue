@@ -1,11 +1,10 @@
 <template>
-    <div class="menu-item" @mouseenter="isOpen = true" @mouseleave="isOpen = false"
-    >
+    <div class="menu-item" @mouseenter="isOpen = true" @mouseleave="isOpen = false">
             {{ title }}
         <transition name="fade" appear>
         <div class="sub-menu" v-if="isOpen">
             <div v-for="(item, i) in items" :key="i"  class="menu-item">
-            <router-link :to="item.path"> {{item.title}}</router-link>
+            <a href="item.path"> {{item.title}}</a>
         </div>
         </div>
         </transition>

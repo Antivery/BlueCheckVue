@@ -2,7 +2,7 @@
    <nav class="main-navbar navbar navbar-expand-lg navbar-light">
          <router-link class="menu-item" to="/">Home</router-link>
          <router-link class="menu-item" to="">Contact</router-link> 
-        <router-link class="menu-item" to="/ServicePage" >  <dropdown title="Our Services" :items="ourServices"/></router-link> 
+         <router-link class="menu-item" to="/ServicePage" ><dropdown title="Our Services" :items="ourServices"/></router-link> 
          <router-link class="menu-item" to="">Special Requests</router-link>
          <router-link class="menu-item" to=""><a href="#">Pre-Made Designs</a></router-link>
          <router-link class="menu-item" to="">Our Work</router-link>

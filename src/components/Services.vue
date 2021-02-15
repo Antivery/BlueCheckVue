@@ -1,44 +1,31 @@
+import services from '@/components/Services.vue';
 
 <template>
 <div class="row">
-    <div v-for="(item,i) in services" :key="i">
-    <img > {{item.thumbnailImage}}
-    <h2>
-       {{item.serviceName}} 
-    </h2>
+    <div :v-for="service in services">
+  <div :v-if="service = logoServices || websiteSevices || Socialmedia" >
+    <img v-bind:src="service.thumbnailImage" />
+    <div>
+       {{service.serviceName}} 
+    </div>
     <p>
-        {{item.description}}
+        {{service.description}}
     </p>
-    <price value="">{{item.price}}</price>
+    <span>{{service.price}}</span>
+    </div>
     </div>
 </div>
 </template>
 <script>
-
-import Price from "./Price.vue"
     export default {
-    
         name: 'services',
-        components:{
-                Price
-        } ,
         props: {
             value: Number,
             prefix:{
                 type: String,
                 default:'$'
             }
-            
-            },
-            
-        data(){
-            return{
-                
             }
-            
-        }
-        
-
     }
 </script>
 
