@@ -3,6 +3,7 @@ import Home from '@/views/Home.vue'
 import servicespage from '@/views/ServicesPage.vue'
 
 
+
   const routes = [
     {
       path: '/',
@@ -23,3 +24,6 @@ const router = createRouter({
 })
 
 export default router
+
+
+

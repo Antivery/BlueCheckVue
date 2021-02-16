@@ -26,7 +26,7 @@
 import Home from'@/views/Home.vue'
 import navbar from '@/components/Navbar.vue'
 export default {
-  name: 'MainApp',
+  name: 'app',
   components: {
     navbar,
     Home
