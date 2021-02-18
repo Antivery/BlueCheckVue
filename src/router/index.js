@@ -8,7 +8,8 @@ import blueChkAcadamy from '@/views/BlueCheckAcadamy.vue'
 import socialMedia from '@/views/SocialMediaPage.vue'
 import websites from '@/views/websites.vue'
 import templates from '@/views/Templates.vue'
-import packages from '@/views/PickFive.vue'
+import pickfive from '@/views/PickFive.vue'
+import specialRequest from '@/views/SpecialRequest.vue'
 
 
 
@@ -62,8 +63,13 @@ import packages from '@/views/PickFive.vue'
     {
       path: '/PickFive',
       name: 'Service Package Page',
-      component: packages
+      component: pickfive
     },
+    {
+      path:'/SpecialRequest',
+      name:'Special Request page',
+      component:specialRequest
+    }
 
 
   

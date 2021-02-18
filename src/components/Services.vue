@@ -17,7 +17,9 @@ import services from '@/components/Services.vue';
 <script>
     export default {
         name: 'services',
-          props: ['items']
+          props: ['items'],
+
+         
     }
 </script>
 <style>

@@ -5,12 +5,12 @@
         <p></p>
         <p></p>
         <p></p>
-        <button></button>
-        <video src="" type="video/mp4"></video>
+        <button>Our Services</button>
+    
         
     </div>
     <span>ABOUT US</span>
-    <img src="" alt="">
+    
     <div>
         <p>
             <b>BlueCheck Marketing Studio</b>, LLC is a full-service online branding design studio offering digital design and development
@@ -126,6 +126,7 @@ import serviceslider from '@/components/ServiceSlider.vue';
 export default {
     name:'home',
   components: serviceslider,
+
 }
 
  </script>

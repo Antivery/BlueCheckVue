@@ -3,10 +3,10 @@
     <span><h1>Design Services</h1></span>
     <div>We'll email you instructions after payment.</div>
     <div>PAYMENT REQUIRED UPFRONT</div> 
-    
-    
     <div>SELECT A SERVICE for more details regarding turnaround time, the design process, etc.</div>
     <div>     
+         <button v-on:click="filterKey = 'all'" :class="{ active: filterKey == 'all' }">All</button>
+    <button v-on:click="filterKey = 'logo'" :class="{active: filterKey == 'logo'}">logo</button>
     <services :items="service"/>
     </div>
 <div>
@@ -26,6 +26,7 @@ import services from '@/components/Services.vue';
         
         data() {
             return {
+                filterKey: 'all',
                 service:[
                         {
                         id:"1",
@@ -56,7 +57,8 @@ import services from '@/components/Services.vue';
                         serviceName:"Insta Highlight Icon Templates",
                         discription:"",
                         thumbnailImage:"",
-                        price:"$50.00"
+                        price:"$50.00",
+                        category:"flyers"
                     },
                     {
                         id:"5",
@@ -78,10 +80,32 @@ import services from '@/components/Services.vue';
                         discription:"git your glow up ",
                         thumbnailImage:"",
                         price:"$165.00"
-                    }
-                ]
-                     
+                    },
+                    
+                ],
+                 computed:{
+                    
+                    serviceFilter(){
+                        return this[this.serviceFilter]
+                    },
+                    all(){
+                        return this.services
+                    },
+                    logo(){
+                        return this.service.filter((service) => service.category <= this.logo)
                     }      
-            }}
+                        
+                        
+                    }
+                
+                }
+               
+                }
+                     
+            }
+            
+            
+            
+    
         
 </script>

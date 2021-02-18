@@ -1,17 +1,21 @@
 <template>
+<div>
+<img :src="this.image" alt="" style="height:250px;">
    <nav class="main-navbar navbar navbar-expand-lg navbar-light">
          <router-link class="menu-item" to="/">Home</router-link>
          <router-link class="menu-item" to="">Contact</router-link> 
          <dropdown title="Our Services" :items="ourServices"/>
-         <router-link class="menu-item" to="">Special Requests</router-link>
+         <router-link class="menu-item" to="/SpecialRequest">Special Requests</router-link>
          <router-link class="menu-item" to="">Pre-Made Designs</router-link>
          <router-link class="menu-item" to="">Our Work</router-link>
          <router-link class="menu-item" to="">Blog</router-link>
          <router-link class="menu-item" to="">Client Portal</router-link>
          <router-link class="menu-item" to="/BlueCheckAcadamy">Class</router-link>
     </nav>
+    </div>
 </template>
 <script>
+import logo from '@/assets/multimedia/images/bcmslogo.png'
     import dropdown from './Dropdown.vue'
     export default {
             name: 'navbar',
@@ -50,10 +54,13 @@
                         title:'Packages',
                         path:'#'
                     }     
-                    ]
+                    ],
+                    image:logo
+        
+  }
                 }
             }    
-          }
+          
 </script>
 <style>
         nav {
