@@ -2,13 +2,13 @@
    <nav class="main-navbar navbar navbar-expand-lg navbar-light">
          <router-link class="menu-item" to="/">Home</router-link>
          <router-link class="menu-item" to="">Contact</router-link> 
-         <router-link class="menu-item" to="/ServicePage" ><dropdown title="Our Services" :items="ourServices"/></router-link> 
+         <dropdown title="Our Services" :items="ourServices"/>
          <router-link class="menu-item" to="">Special Requests</router-link>
-         <router-link class="menu-item" to=""><a href="#">Pre-Made Designs</a></router-link>
+         <router-link class="menu-item" to="">Pre-Made Designs</router-link>
          <router-link class="menu-item" to="">Our Work</router-link>
          <router-link class="menu-item" to="">Blog</router-link>
          <router-link class="menu-item" to="">Client Portal</router-link>
-         <router-link class="menu-item" to="">Class</router-link>
+         <router-link class="menu-item" to="/BlueCheckAcadamy">Class</router-link>
     </nav>
 </template>
 <script>
@@ -24,23 +24,23 @@
                     ourServices: [ 
                     {
                         title: 'All',
-                        path: '/ServicesPage'
+                        path: '/ServicePage'
                     },
                     {
                         title: 'Logos',
-                        path: '#'
+                        path: '/LogoPage'
                     },
                     {
                         title: 'Social Media',
-                        path:'#'
+                        path:'/SocialMedia'
                     },
                     {
                         title: 'Websites',
-                        path: '#'
+                        path: '/Websites'
                     },
                     {
                         title: 'Flyers',
-                        path:'#'
+                        path:'/Flyers'
                     },
                     {
                         title:'Templates',

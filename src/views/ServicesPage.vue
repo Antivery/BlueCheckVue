@@ -2,11 +2,12 @@
 <div class="row" >
     <span><h1>Design Services</h1></span>
     <div>We'll email you instructions after payment.</div>
-    <div>FULL PAYMENT REQUIRED UPFRONT</div>
+    <div>PAYMENT REQUIRED UPFRONT</div> 
+    
+    
     <div>SELECT A SERVICE for more details regarding turnaround time, the design process, etc.</div>
-    <div>
-        <services :items="service">
-        </services>
+    <div>     
+    <services :items="service"/>
     </div>
 <div>
 </div>

@@ -18,7 +18,7 @@
         </div>
     <div>
         <div>
-            {{item.price}}
+            
         </div>
         <div>
         <button>
@@ -28,3 +28,8 @@
         </div>
         </div>
 </template>
+<script>
+export default {
+    name:"pickTree",
+}
+</script>

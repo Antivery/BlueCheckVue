@@ -2,7 +2,7 @@
     <div class="row">
         <div>
             <img/>
-            <h3>STARTER KIT</h3>
+            <h3>STARTER nnn KIT</h3>
         <div>
              <p>
                 You will be able to download instructions and a copy of the contract after payment. 
@@ -18,7 +18,7 @@
         </div>
     <div>
         <div>
-            {{item.price}}
+           
         </div>
         <div>
         <button>
@@ -28,3 +28,8 @@
         </div>
         </div>
 </template>
+<script>
+export default {
+    name:"websites",
+}
+</script>
